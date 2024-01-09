@@ -8,9 +8,9 @@ class Post:
     publish: bool
     created: datetime
 
-    def __init__(self, title, desc, rate, publish):
+    def __init__(self, title: str, description: str, rate: int, publish: bool) -> None:
         self.title = title
-        self.description = desc
+        self.description = description
         self.rate = rate
         self.publish = publish
         self.created = datetime.now()
@@ -22,7 +22,6 @@ class Post:
 
 
 if __name__ == '__main__':
-
     p = Post('Tashkent v tope', 'Tashkent vishel na 2 mesto po zagreneniye vozduxa', 4, True)
 
     print(p)
