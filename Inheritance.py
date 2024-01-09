@@ -1,4 +1,4 @@
-from main import Post
+from Polymorphism import Post
 
 
 class NewPost(Post):
